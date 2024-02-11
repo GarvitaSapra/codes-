@@ -1,0 +1,68 @@
+<html> 
+<head> 
+ <title></title> 
+<frameset rows="50%,50%" cols="50%,50%">  
+ <frame src="frame_1.html">  
+ <frame src="frame_2.html"> 
+ <frame src="frame_3.html">  
+ <frame src="frame_4.html">  
+</frameset> 
+</head> 
+</html> 
+ 
+<html> 
+<head> 
+<title> 
+       Frame_1 
+</title> 
+</head> 
+<body bgcolor="#ff1a1a"> 
+<center> 
+<img src="https://spng.subpng.com/20190521/gh/kisspng-bts-k-pop-image-love-maze-character
+5ce482977da834.7144676815584795115147.jpg" width="35%" height="40% " vspace="30"> 
+</center> 
+</body>                                                                                                                                              
+</html> 
+
+<html> 
+<head> 
+<title> 
+       Frame_2 
+</title> 
+</head> 
+<body bgcolor="#ffff00"> 
+<center> 
+<img src="https://toppng.com/uploads/preview/koya-rm-namjoon-bt21freetoedit-stickers-bt21
+koya-115629396676cotonvqmm.png" vspace="30" width="35%" height="40%"> 
+</center> 
+</body> 
+</html> 
+
+<html> 
+<head> 
+<title> 
+                Frame_3 
+</title> 
+</head> 
+<body bgcolor="#99ffcc"> 
+<center> 
+<img src="https://listimg.pinclipart.com/picdir/s/85-852230_koya-sticker-bt21-koya-gif-clipart.png" 
+vspace="40" width="35%" height="60%"> 
+</center> 
+</body> 
+</html> 
+
+<html> 
+<head> 
+<title> 
+      Frame_4 
+</title> 
+</head> 
+<body bgcolor="#00ff00"> 
+<center> 
+<img src="https://icon2.cleanpng.com/20180501/gqw/kisspng-bts-mobile-phones-line-friends-k
+pop-emoji-5ae842a41e7ac6.6181841715251708521249.jpg" vspace="40" width="35%" 
+height="60%" > 
+</center> 
+</body> 
+</html> 
