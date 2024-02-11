@@ -1,0 +1,121 @@
+<html> 
+<head> 
+ <title> 
+  Feedback Form 
+ </title> 
+</head> 
+<body bgcolor="#b08ff7"> 
+<font color="#0f0f0a" face="microsoft yahei" size="15"><b>WEBSITE FEEDBACK FORM <br> 
+<font color="#1f1f14" size="5">Please fill this breif feedback form so we can ensure a quality 
+product</font></b></font><br></b> 
+</form> 
+<Form name = "myform" onsubmit="return validateForm()"> 
+<table cellpadding="4" cellspacing="4" ><br> 
+ <tr> 
+  <td width="600">Name</td> 
+  <td>Email</td> 
+ </tr> 
+ <tr> 
+  <td width=><Input type="text" size="42" maxlength="20" Name="Name" id="Name" ></td> 
+    <td width=><Input type="text" size="42" maxlength="20" Name="Email" id="Email" ></td> 
+ </tr>  
+</table> 
+__________________________________________________________________________________
+ __________________________________________________________________________________
+ ________________________________________ 
+<table cellpadding="4" cellspacing="4" > 
+ <tr> 
+  <td width="600">Is this your first visit to the website</td> 
+  <td>Were you able to find what you needed?</td> 
+</tr> 
+<tr> 
+        <td><input type="radio" name="visit" value="yes">Yes 
+        <input type="radio" name="visit" value="no">No</td> 
+        <td><input type="radio" name="needed" value="yes">Yes 
+        <input type="radio" name="needed" value="no">No</td> 
+ </tr> 
+</table> 
+__________________________________________________________________________________
+ __________________________________________________________________________________
+ ________________________________________ 
+<table cellpadding="4" cellspacing="4">     
+   <tr> 
+              <td width="600">What is the primary reason for your visit to the website?</td> 
+              <td>If you do not find what you needed , please tell us what info you were seeking?</td> 
+</tr> 
+<tr> 
+   <td><TEXTAREA NAME="Reason" COLS="45" ROWS="5">---Enter your reason---  
+   </TEXTAREA></td> 
+   <td><TEXTAREA NAME="Reason" COLS="45" ROWS="5">---Enter your requirements---  
+   </TEXTAREA></td> 
+</tr>    
+</table> 
+__________________________________________________________________________________
+ __________________________________________________________________________________
+ ________________________________________ 
+ 
+<table cellpadding="4" cellspacing="4"> 
+<tr> 
+ <td width="600">How easy is it find information on the site?</td> 
+ <td>What is the likelihood that you will return to the site?</td> 
+</tr> 
+<tr> 
+ <td> 
+        <INPUT TYPE="checkbox" NAME="find" VALUE="Very">Very easy<br> 
+        <INPUT TYPE="checkbox" NAME="find" VALUE="Easy">Easy<br> 
+        <INPUT TYPE="checkbox" NAME="find" VALUE="Average">Average<br> 
+        <INPUT TYPE="checkbox" NAME="find" VALUE="Difficult">Difficult<br> 
+        <INPUT TYPE="checkbox" NAME="find" VALUE="Veryd">Very Difficult<br> 
+        </td> 
+        <td><INPUT TYPE="checkbox" NAME="find" VALUE="Extremely">Extremely likely<br> 
+        <INPUT TYPE="checkbox" NAME="find" VALUE="Likely">Likely<br> 
+        <INPUT TYPE="checkbox" NAME="find" VALUE="Moderately">Moderately likely<br> 
+        <INPUT TYPE="checkbox" NAME="find" VALUE="Slighty">Slighty likely<br> 
+        <INPUT TYPE="checkbox" NAME="find" VALUE="Unlikely">Unlikely to return<br> 
+        </td>     
+    </tr> 
+</table> 
+__________________________________________________________________________________
+ __________________________________________________________________________________
+ ______________________________________ 
+<table cellpadding="4" cellspacing="4">     
+    <tr> 
+     <td width="600">Please add any additional comments or suggestions.</td> 
+       </tr> 
+<tr> 
+    <td><TEXTAREA NAME="Reason" COLS="170" ROWS="5" placeholder="---Enter your opinion---"        
+    </TEXTAREA></td> 
+</tr> 
+<tr> 
+    <td > 
+      <button>Submit</button> 
+   </td> 
+</tr> 
+</body> 
+    <script> 
+        function validateForm() 
+            { 
+            let returnval= true; 
+            let name = document.getElementById("Name").value; 
+            if(name.length<4){ 
+                alert("Your name length is too short"); 
+                returnval = false; 
+            } 
+            let email = document.getElementById("Email").value; 
+            if(email.length<10) 
+            { 
+                alert("Email length is too short"); 
+                returnval = false; 
+            } 
+            if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.match(email)) 
+            { 
+         returnval= true; 
+            Else 
+            { 
+                alert("invalid email"); 
+                returnval =false; 
+            } 
+            return returnval; 
+          } 
+    </script> 
+</html> 
