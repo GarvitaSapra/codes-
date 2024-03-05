@@ -91,10 +91,10 @@ ________________________________________________________________________________
       <button>Submit</button> 
    </td> 
 </tr> 
-</body> 
+</table>
+</Form>
     <script> 
-        function validateForm() 
-            { 
+        function validateForm() { 
             let returnval= true; 
             let name = document.getElementById("Name").value; 
             if(name.length<4){ 
@@ -107,10 +107,11 @@ ________________________________________________________________________________
                 alert("Email length is too short"); 
                 returnval = false; 
             } 
-            if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.match(email)) 
+            if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) 
             { 
-         returnval= true; 
-            Else 
+               returnval= true; 
+            }
+            else 
             { 
                 alert("invalid email"); 
                 returnval =false; 
@@ -118,4 +119,5 @@ ________________________________________________________________________________
             return returnval; 
           } 
     </script> 
+    </body>
 </html> 
